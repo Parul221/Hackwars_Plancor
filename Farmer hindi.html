@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plancor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="logo2.png">
+    <link rel="stylesheet" href="farmer.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo2.png" alt="PlanCor Logo">
+            <span>प्लांकोर</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">घर</a></li>
+                <li><a href="farmer.html" class="active">किसान पोर्टल</a></li>
+                <li><a href="file:///C:/Users/abc/Downloads/Plancor%20(%2015Sept)/about.html" >बारे में</a></li>
+                <li><a href="contact.html">संपर्क करें</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <br>
+    <button id="page-switch" data-page="1" style="background-color: rgba(110, 192, 99, 0.842); height: 40px; width: 100px;"><a href="file:///C:/Users/abc/Downloads/Plancor%20(%2015Sept)/farmer.html"> 
+        Convert to english</button></a>
+    <div class="wrapper">
+        <section class="main">
+            <h1>प्लांकोर किसान</h1>
+            <p><i>जहां हर विवरण मायने रखता है!</i></p>
+            <button id="openRegistrationForm" class="register-now">अभी पंजीकरण करें</button>
+        </section>
+
+        <section class="content">
+            <div class="content-box">
+                <div class="list-container">
+                    <ul>
+                        <li style="display: inline;">कृषि उपज का प्रबंधन एवं प्रसंस्करण</li>
+                        <li style="display: inline;">इस नवाचार के माध्यम से ग्रामीण विकास का समर्थन करना</li>
+        <li style="display: inline;">आसानी से हमसे जुड़ें</li>
+                        
+                    </ul>
+                </div>
+                <div class="image">
+                    <img src="farmer.jpg" alt="Farmer">
+                </div>
+            </div>
+        </section>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="footer-column">
+                <h3><a href="#">हमारे बारे में</a></h3>
+                <ul>
+                    <li>कहानी</li>
+                    <li>उद्देश्य</li>
+                    <li>यात्रा</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3><a href="#">टीम</a></h3>
+                <ul>
+                    <li>निमरप्रीत सिंह</li>
+                    <li>पारुल गर्ग</li>
+                    
+
+                </ul>
+            </div>
+        
+            <div class="footer-column">
+                <h3><a href="contact.html">हमसे संपर्क करें</a></h3>
+                <ul>
+                    <li>ईमेल</li>
+                    <li>वापस कॉल करने का अनुरोध करें</li>
+                    <li>फ़ोन</li>
+                </ul>
+            </div>
+        
+            <div class="footer-column">
+                <h3><a href="#">हमारे पर का पालन करें</a></h3>
+                <ul>
+                    <li><a href="#" target="_blank">फेसबुक</a></li>
+              
+                </ul>
+            </div>
+        
+            <p>&copy; 
+                2024 प्लांकोर। सर्वाधिकार सुरक्षित।</p>
+        </footer>
+        
+
+        <div id="registrationModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>किसान पंजीकरण</h2>
+                <form id="registrationForm">
+                    <div class="form-group">
+                        <label for="farmerName">नाम:</label>
+                        <input type="text" id="farmerName" name="farmerName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="farmLocation">फार्म स्थान:</label>
+                        <input type="text" id="farmLocation" name="farmLocation" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact">संपर्क संख्या:</label>
+                        <input type="tel" id="contact" name="contact" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">ईमेल:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <button type="submit" class="btn">पंजीकरण करवाना</button>
+                </form>
+            </section>
+    
+            <section class="product-listing">
+                <h2>अपनी उपज की सूची बनाएं</h2>
+                <form id="productForm">
+                    <div class="form-group">
+                        <label for="produceName">उत्पादन का नाम:</label>
+                        <input type="text" id="produceName" name="produceName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="quantity">मात्रा:
+                        </label>
+                        <input type="number" id="quantity" name="quantity" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="price">मूल्य प्रति इकाई:</label>
+                        <input type="number" id="price" name="price" step="0.01" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">विवरण:</label>
+                        <textarea id="description" name="description" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">उत्पादन जोड़ें</button>
+                </form>
+            </section>
+    
+            </div>
+        </div>
+    </div>
+
+    <script src="farmer.js"></script>
+</body>
+</html>
